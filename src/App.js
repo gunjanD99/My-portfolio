@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.css";
 // import {  BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -8,8 +9,15 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Sociallinks from "./components/Sociallinks";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+    
+    
+   }, [])
   return (
     <>
       <Navbar />

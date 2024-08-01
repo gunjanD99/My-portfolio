@@ -1,35 +1,71 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import myimg from "../asset/myimg.jpg";
+import myimg2 from "../asset/snap-2.png";
 import { BsPersonVcard } from "react-icons/bs";
 import { IoMdPerson } from "react-icons/io";
+import Typed from "typed.js";
 
 import { TbFileDownload } from "react-icons/tb";
+import { render } from "@testing-library/react";
 
 function Home() {
+  // const typedRef = useRef(null);
+  // useEffect(() => {
+  //   const options = {
+  //     strings: [
+  //       "Welcome to my profile",
+  //       "I'm full stack developer",
+  //       "Android Developer",
+  //     ],
+  //     typeSpeed: 50,
+  //     backSpeed: 50,
+  //     backDelay: 400,
+  //     // startDelay: 300,
+  //     cursorChar: '',
+  //     loop: true,
+  //   };
+
+  //   const typed = new Typed(typedRef.current, options);
+
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
+   
   return (
     <div
-      name="home"
-      className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800 pt-4 pb-20"
+      name="home" id="home"
+      className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800 pt-20 pb-20 "
     >
       <div
         className="flex flex-col items-center justify-center px-4 h-full w-full 
         mx:auto md:flex-row "
       >
-        <div className="flex flex-col justify-center h-full mt-20">
-          <h2 className="sm:text-7xl font-bold text-4xl text-white">
-            Gunjan Dhoke
-          </h2>
-          <h3 className="text-gray-400 font-bold text-3xl mt-5 ">MERN Stack Developer</h3>
+        <div className="flex flex-col justify-center h-full mt-10" >
 
-          <p className="py-6 text-gray-500 max-w-md">
+          <div className="sm:text-4xl font-bold text-4xl text-white">
+          {/* <p  ref={typedRef} ></p> */}
+          <h2 className="text-7xl text-white opacity: 1; transform: none" data-aos="fade-up" 
+          data-aos-duration="1500"  >Gunjan Dhoke</h2>
+          </div>
+          <h2 className="text-gray-400 font-bold text-3xl mt-7 opacity: 1; transform: none" data-aos="fade-up" 
+          data-aos-duration="2000" > MERN STACK Developer </h2>
+
+
+
+          <p className="py-6 text-gray-500 max-w-md opacity: 1; transform: none" data-aos="fade-up"
+           data-aos-duration="3000" >
              
             Highly motivated Software Engineer with a strong foundation in computer science principles 
             and hands-on experience through academic projects and internships. 
-            Proficient in multiple
-             programming languages, including Java, Kotlin, and C++, and skilled in software development, 
-             debugging, and testing. Demonstrates excellent problem-solving abilities, a keen eye for detail, and a commitment 
+            <br/>
+            Proficient in multiple programming languages, including Java, Kotlin, and C++, and skilled in software development, 
+             debugging, and testing. 
+             <br/>
+             Demonstrates excellent problem-solving abilities, a keen eye for detail, and a commitment 
              to continuous learning and professional growth. Ready to contribute to dynamic teams and innovative projects in a 
              fast-paced environment.
+             <br/>
           </p>
 
           <div>
@@ -46,14 +82,14 @@ function Home() {
                 <TbFileDownload/>
               </span>
             </button> */}
-            <button class=" animate-bounce focus:animate-bounce relative inline-flex items-center 
+            <button class="mt-4 animate-bounce focus:animate-bounce relative inline-flex items-center 
             justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 
             rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400
              hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
              >
 
               <span class="  group relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 
-              rounded-md group-hover:bg-opacity-0">
+              rounded-md group-hover:bg-opacity-0"  >
                 <a href="https://drive.google.com/file/d/1NtxygeWk1nDHG7wd1qwuudp89oOtSSv0/view?usp=drive_link" 
                 // download={true}
                 // target="_blank"
@@ -77,10 +113,12 @@ function Home() {
           </div>
         </div>
         {/* /////////////////////////////////////////////////////////////// */}
-        <div>
+        <div className="opacity: 0; transform: none " 
+        data-aos="flip-left" data-aos-easing="ease-out-cubic"
+         data-aos-duration="2000">
           <img
             src={myimg}
-            className=" rounded-full mx-auto  w-1/2  md:w-80  p-5 ml-6 mt-4"
+            className=" rounded-full mx-auto  w-2/3  md:w-80  p-5 ml-6 mt-4"
           />
         </div>
       </div>

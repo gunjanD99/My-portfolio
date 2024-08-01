@@ -11,27 +11,27 @@ function Navbar() {
         {
             id : 1,
             link:"Home",
-            path:"/",
+            path:"#home",
         },
         {
             id : 2,
             link:"About",
-            path:"/about",
+            path:"#about",
         },
         {
             id : 3,
             link:"Skills",
-            path:"/skills",
+            path:"#skills",
         },
         {
             id : 4,
             link:"Education",
-            path:"/education",
+            path:"#education",
         },
         {
             id : 5,
             link:"Experience",
-            path:"/experience",
+            path:"#experience",
         },
     ];
 
@@ -39,21 +39,24 @@ function Navbar() {
     <>
     <nav>
     <div className=" flex justify-between items-center px-4 font-medium  w-full h-20 z-10
-     bg-black text-cyan-50 fixed">
+     bg-black text-cyan-50 fixed" data-aos="fade-down"
+     data-aos-duration="2000" >
         <div>
-            <h1 className="text-2xl ml-2 font-light">Portfolio</h1>
+            <h1 className="text-lg ml-2 font-light text-orange-500 ">|| Jay Shri Ram ||</h1>
         </div>
 
         <ul className=" hidden md:flex ">
-            {arr.map(({id,link})=>(
+            {arr.map(({id,link,path})=>(
                   <li key={id} className="px-4 mr-4 font-medium text-gray-500 hover:cursor-pointer 
-                  hover:scale-105 duration-50 ">{link}</li>
+                  hover:scale-105 duration-50 hover:text-white">
+                    <a href={path} className="nav_items"> {link}</a>
+        </li>
             ))}
         </ul>
 
         <div onClick={()=>setNav(!nav)}
 
-         className="cursor-pointer pr-4 z-10 text-gray-400 md:hidden">
+         className="cursor-pointer pr-4 z-10 text-gray-400 md:hidden hover:border-l-white">
             {nav ? <FaTimes fontSize={30}/> : <FaBarsStaggered fontSize={30}/>}            
         </div>
 

@@ -9,12 +9,14 @@ import { GoDotFill } from "react-icons/go";
 function Experience() {
   return (
     
-    <div name="experience"
+    <div name="experience" id="experience"
     className=" w-full h-screen-lg  pt-32 pb-20  bg-gradient-to-b from-gray-900 to-gray-900
-     flex flex-col justify-center items-center ">
-      <div className="text-white font-bold text-4xl">Work Experience</div>
+     flex flex-col justify-center items-center" >
+      <div className="text-white font-bold text-4xl" data-aos="fade-up" 
+             data-aos-duration="2500">Work Experience</div>
 
-       <div className="flex flex-col justify-center items-center mt-32 text-left">
+       <div className="flex flex-col justify-center items-center mt-32 text-left" data-aos="zoom-in"
+         data-aos-duration="2000">
         <div className="mb-8 w-full">
           <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
             <h2 className="text-xl font-semibold text-cyan-500">Backend Web Developer</h2>
@@ -30,7 +32,7 @@ function Experience() {
           <p className="text-gray-500 font-serif">6 Month</p>
           <div className="text-gray-500 flex items-center">
           <FaLocationArrow size={20}/>
-          <p className="ml-1">Legos, Nigeria Remote</p>
+          <p className="ml-1">Legos, Nigeria - (Remote)</p>
           </div>
           <ul className="text-gray-500 ">
             <li className="flex items-center">

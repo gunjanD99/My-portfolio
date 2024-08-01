@@ -114,7 +114,7 @@ function Skills() {
     ]
 
   return (
-    <div name= "Skills"
+    <div name= "Skills" id="skills"
     className="bg-gradient-to-b from-gray-900 to-black w-full h-screen-lg pb-36 pt-28"
     >
         
@@ -138,6 +138,9 @@ function Skills() {
                 <div 
                 key={id} 
                 className={` shadow-lg hover:scale-105 duration-500 py-2 mb-8 rounded-lg ${style}`}
+                data-aos="zoom-in"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
                 >
 
                         <img src={src} className="w-15 h-10 mx-auto"/>

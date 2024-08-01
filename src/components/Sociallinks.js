@@ -32,13 +32,14 @@ function Sociallinks() {
           Gmail <GrMail size={30} />
         </>
       ),
-      href: "gunjan312dhoke@gmail.com",
+      href: "mailto:gunjan312dhoke@gmail.com",
       style: "rounded-br-md",
     },
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed" data-aos="fade-right"
+    data-aos-duration="2000">
       <ul>
         {links.map(({ id, child, href, style }) => (
           <li
@@ -51,7 +52,8 @@ function Sociallinks() {
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white"
+              className="flex justify-between items-center w-full text-white"  data-aos="fade-right"
+              data-aos-duration="3000"
             >
               {child}
             </a>
