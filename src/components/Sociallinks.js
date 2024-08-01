@@ -2,7 +2,6 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
-import { IoMdMail } from "react-icons/io";
 
 function Sociallinks() {
   const links = [
