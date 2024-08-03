@@ -12,7 +12,7 @@ function Sociallinks() {
           Github <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/gunjan1k", //https://github.com/gunjan1k https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox
+      href: "https://github.com/gunjanD99", //https://github.com/gunjan1k https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox
       style: "rounded-tr-md",
     },
     {

@@ -68,8 +68,10 @@ function Experience() {
         </div>
       </div>
       {/* /////////////////////////////////////////////////////////////////////////// */}
-
+     
       {/* ////////////////////////////////////////////////////////////////////// */}
+      <h1 className="text-orange-400 text-2xl font-light mt-20 p-2 ">❝ Nothing ever grows without a seed, and nothing ever changes without a dream. ❞
+        </h1>
     </div>
   );
 }
