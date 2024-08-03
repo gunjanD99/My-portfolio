@@ -1,6 +1,4 @@
 import React from 'react'
-import school from "../asset/port/school-icon.png"
-import school2 from "../asset/port/education.png"
 
 function Education() {
   return (
