@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
   return (
     <div name="about" id="about"
-    className=" w-full h-screen-lg  pt-32 pb-32  bg-gradient-to-b from-gray-800 to-gray-900 text-gray-300"
+    className=" w-full h-screen-lg  pt-28 pb-32  bg-gradient-to-b from-gray-800 to-gray-900 text-gray-300"
     >
        <div className="max-w-screen-lg mx-auto flex flex-col justify-center h-full w-full p-4" data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom"  data-aos-duration="2000">
@@ -15,9 +15,8 @@ function About() {
             I am Gunjan Dhoke. I am 21 years old and dedicated individual with a passion for full-stack development. 
             I enjoy the entire process, from conceptualization to actual implementation. 
             I am particularly interested in overcoming challenges that push me beyond my comfort zone. Throughout my journey, 
-            I have experience in developing and hosting various web pages and sites.
+            I have experience in developing and designed various web pages and android applications.
 
-            I have worked with startups and individuals from around the world
             </p>
             <br/>
 

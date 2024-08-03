@@ -123,7 +123,7 @@ function Skills() {
                 <p className="text-4xl font-bold border-b-4 border-gray-500 p-1 inline">
                     Skills
                 </p>
-                <p className="py-6">These are the technologies I have work with</p>
+                <p className="py-6 text-gray-400">These are the technologies I have work with</p>
             </div>
 
             <div className="w-full grid grid-cols-3 sm:grid-cols-5 gap-8 text-center py-8 px-12 ">
