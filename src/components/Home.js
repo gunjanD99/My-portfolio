@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import myimg from "../asset/myimg.jpg";
 import myimg2 from "../asset/snap-2.png";
-import { BsPersonVcard } from "react-icons/bs";
 import { IoMdPerson } from "react-icons/io";
 import Typed from "typed.js";
 
