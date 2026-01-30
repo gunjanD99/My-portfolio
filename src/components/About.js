@@ -13,7 +13,7 @@ function About() {
        </div>
 
             <p className="text-xl mt-17">
-            I am Gunjan Dhoke. I am 21 years old and dedicated individual with a passion for full-stack development. 
+            I am Gunjan Dhoke. I am 21 years old and dedicated individual with a passion for AWS Devops Engineer. 
             I enjoy the entire process, from conceptualization to actual implementation. 
             I am particularly interested in overcoming challenges that push me beyond my comfort zone. Throughout my journey, 
             I have experience in developing and designed various web pages and android applications.
